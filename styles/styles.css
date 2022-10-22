@@ -286,7 +286,6 @@ p {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  transform: translatey(100%);
 }
 
 .backdrop.is-hidden {
@@ -508,16 +507,17 @@ p {
   justify-content: center;
   border-radius: 50%;
   transition: color var(--color-hover-animation),
-    box-shadow var(--color-hover-animation),
+    fill var(--color-hover-animation), box-shadow var(--color-hover-animation),
     background-color var(--color-hover-animation);
 }
 
-.net-icon {
+.net-link .net-icon {
   fill: var(--color-icon);
 }
 
 .net-link:hover {
   background-color: var(--color-thirdary);
+  color: var(--color-white-color);
 }
 
 .net-link:hover .net-icon {
@@ -555,6 +555,7 @@ p {
   border-radius: 5px;
   color: var(--color-icon);
   transition: color var(--color-hover-animation),
+    border-color var(--color-hover-animation),
     box-shadow var(--color-hover-animation),
     background-color var(--color-hover-animation);
 }
